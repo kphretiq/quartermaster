@@ -6,7 +6,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(name="quartermaster",
-    version="0.4",
+    version="1.0",
     description="Get fiscal quarter",
     long_description="trivial class to get quarter from a user-defined gregorian fiscal year.",
     author="pathetiq kphretiq",
