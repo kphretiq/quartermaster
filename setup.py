@@ -1,9 +1,12 @@
 #!/usr/bin/env python
-
+import os
 from setuptools import setup
 
-setup(name="Quartermaster",
-    version="0.2",
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+setup(name="quartermaster",
+    version="0.4",
     description="Get fiscal quarter",
     long_description="trivial class to get quarter from a user-defined gregorian fiscal year.",
     author="pathetiq kphretiq",
@@ -11,7 +14,7 @@ setup(name="Quartermaster",
     maintainer="pathetiq kphretiq",
     url="https://github.com/kphretiq/quartermaster",
     download_url="https://github.com/kphretiq/quartermaster",
-    packages=["quartermaster"],
+    packages=["quartermaster", "tests"],
     classifiers=[
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",

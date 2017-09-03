@@ -58,10 +58,7 @@ class Quartermaster(object):
         else:
             now = datetime.date.today()
 
-
         fisstart = datetime.date(now.year, fismonth, fisday)
-        else:
-            fisstart = datetime.date(now.year, 1, 1)
 
         self.quarter = self.get_quarter(now, fisstart)
         self.day = self.get_day(now, fisstart)
